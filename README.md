@@ -1,4 +1,4 @@
-# PPG_fatigue
+# Estimating fatigue from PPG signals
 
 The goal of this project is to differentiate between physically fatigued vs. non-fatigued states from only a photoplethysmography (PPG) signal. PPG data is collected from a wrist-worn device, normalised and filtered, then features are extracted and passed into a range of supervised ML classifier models.
 
@@ -30,7 +30,7 @@ Non-fatigued = no kind of physical exercise for >12hrs prior
 # Files in this repo
 Lots of notes + descriptions in the code. Summary here:
 
-- ///PPG_data.py - master file that extracts and gathers PPG data. Run this as a first step after gathering the raw PPG data. Outputs a CSV file containing dataframe of features for each signal
+- \\\PPG_data.py - master file that extracts and gathers PPG data. Run this as a first step after gathering the raw PPG data. Outputs a CSV file containing dataframe of features for each signal
 - PPG_full_analysis.py - extracts features specific to PPG cycles. Called automatically by PPG_data.py
 - HRV_analysis.py - extracts features specific to HRV (heart rate variability). Called automatically by PPG_data.py
 - PPG_models.py - takes CSV from PPG_data.py and trains data on model specified by user, then tests the model on a previously unseen split
