@@ -260,6 +260,7 @@ class Training:
         if model == 'qda':
             param_grid = {
                 'reg_param': list(Processing.frange(0.1, 1.0, 0.1)),    # regularisation parameter
+                # 'reg_param': [0.9]                                    # found empirically to be the best overall reg_param for this data (highest model accuracy + ROC AUC)
             }
             # use more splits (cv parameter) to overcome potentially non-Gaussian underlying data
             # if this model is a poor fit - replace with LinearDiscriminantAnalysis
