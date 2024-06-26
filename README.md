@@ -1,4 +1,4 @@
-# Estimating fatigue from PPG signals
+# Classifying fatigue from PPG signals
 
 The goal of this project is to differentiate between physically fatigued vs. non-fatigued states from only a photoplethysmography (PPG) signal. PPG data is collected from a wrist-worn device, normalised and filtered, then features are extracted and passed into a range of supervised ML classifier models.
 
@@ -24,27 +24,28 @@ Lots of clarifying notes + descriptions in the code. Summary:
   - `general_peak_filtering.py` - general peak-finding algorithm tailored to PPG
 
 ## Installation
-1. Clone this repository:
+1. Clone this repository
    ```
    git clone https://github.com/yourusername/PPG_fatigue.git
    cd PPG_fatigue
    ```
 
-2. Create and activate virtual environment:
+2. Create and activate virtual environment
    ```
    python -m venv venv
    source venv/bin/activate
    ```
 
-3. Install the required packages:
+3. Install the required packages
    ```
    pip install -r requirements.txt
    ```
 
 ## Usage
 1. Collect data:
-   ```
 
+   ```
+    
    ```
 
 
