@@ -4,15 +4,14 @@ The goal of this project is to differentiate between physically fatigued vs. non
 
 ## Contents
 
-1. [Project Description](#project-description)
+1. [Project structure](#project-structure)
 2. [Installation](#installation)
 3. [Usage](#usage)
-4. [Contributing](#contributing)
-5. [License](#license)
-6. [Contact](#contact)
+4. [Results](#results)
+5. [Sources of inspiration](#sources-of-inspiration)
 
 
-## Repo structure
+## Project structure
 Lots of clarifying notes + descriptions in the code. Summary:
 
 - `data/` - folder containing raw .txt files of PPG signals taken from my wrist. "Fatigued" data was taken <2hrs after an intense training session (sprinting + heavy weights); "Non-fatigued" is defined as having done no kind of physical exercise for >12hrs prior to reading.
