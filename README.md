@@ -24,30 +24,31 @@ Lots of clarifying notes + descriptions in the code. Summary:
   - `general_peak_filtering.py` - general peak-finding algorithm tailored to PPG
 
 ## Installation
-1. Clone this repository
+### 1. Clone this repository:
    ```
    git clone https://github.com/yourusername/PPG_fatigue.git
    cd PPG_fatigue
    ```
 
-2. Create and activate virtual environment
+### 2. Create and activate virtual environment:
    ```
    python -m venv venv
    source venv/bin/activate
    ```
 
-3. Install the required packages
+### 3. Install the required packages:
    ```
    pip install -r requirements.txt
    ```
 
 ## Usage
-1. Collect data:
+### 1. Run main script to extract and process data 
 
    ```
-    
+    python scripts/PPG_data.py
    ```
-
+When prompted, type `run new`
+The output will be a CSV file
 
 ## Usage
 1. Collect multiple PPG signals (ideally 10s or 100s) from wearable wrist device using Arduino or similar - make sure as close to zero motion artifacts as possible by keeping body still throughout
