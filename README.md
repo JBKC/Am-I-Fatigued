@@ -3,6 +3,7 @@
 Goal: Use Supervised ML models to determine between different classes of photoplethysmography (PPG) biosignals (fatigued vs non-fatigued)
 
 Fatigued = reading taken <2hrs after an intense training session (sprinting + heavy weights)
+
 Non-fatigued = no kind of physical exercise for >12hrs prior
 
 ^^ these were my project definitions - can also be used for testing mental fatigue / stress as well as physical fatigue
