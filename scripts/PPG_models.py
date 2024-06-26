@@ -435,26 +435,21 @@ class QuadraticDiscriminant(BaseModel):
         self.model_type = 'qda'
 
     def plot(self, X_train, y_train, model):
-        start_time = time.time()
-        logging.info("Starting PCA transformation")
         pca = PCA(n_components=2)
         X_train_2d = pca.fit_transform(X_train)
-        logging.info(f"PCA transformation completed in {time.time() - start_time} seconds")
-    
-        h = 0.1  # step size in the mesh
+
+        h = 0.02  # step size in the mesh
         x_min, x_max = X_train_2d[:, 0].min() - 1, X_train_2d[:, 0].max() + 1
         y_min, y_max = X_train_2d[:, 1].min() - 1, X_train_2d[:, 1].max() + 1
         xx, yy = np.meshgrid(np.arange(x_min, x_max, h), np.arange(y_min, y_max, h))
-    
-        logging.info("Starting model prediction")
-        start_time = time.time()
+
+        # predict the probability ranges for each class
         Z = model.predict_proba(pca.inverse_transform(np.c_[xx.ravel(), yy.ravel()]))[:, 1]
         Z = Z.reshape(xx.shape)
-        logging.info(f"Model prediction completed in {time.time() - start_time} seconds")
-    
+
         contour = plt.contourf(xx, yy, Z, cmap=plt.cm.coolwarm, alpha=0.8)  # plot probability gradient
         plt.colorbar(contour, label='Class 1 Probability')
-    
+
         plt.scatter(X_train_2d[y_train == 0, 0], X_train_2d[y_train == 0, 1], c='blue', edgecolor='k', label='Class 0')
         plt.scatter(X_train_2d[y_train == 1, 0], X_train_2d[y_train == 1, 1], c='red', edgecolor='k', label='Class 1')
         plt.xlabel('PCA Component 1')
