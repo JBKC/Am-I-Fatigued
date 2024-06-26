@@ -48,6 +48,7 @@ Lots of clarifying notes + descriptions in the code. Summary:
     python scripts/PPG_data.py
    ```
 When prompted, type `run new`
+
 The output will be a CSV file
 
 ## Usage
