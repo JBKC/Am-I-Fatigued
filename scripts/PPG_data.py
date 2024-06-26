@@ -182,14 +182,17 @@ def main():
     function_call = input("Options: run new, plot results\n"
                        "Type option here: ").strip().lower()
 
-    # Look up and call the corresponding function
+    # call the corresponding function
     if function_call == "run new":
-        folder = input("Local filepath containing signal data: ").strip()
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        folder = os.path.join(script_dir, '..', 'data')
         run_new_full(folder)
+        
     if function_call == "plot results":
         x_data = input("X data (must be typed exactly as in dataframe): ").strip()
         y_data = input("Y data (must be typed exactly as in dataframe): ").strip()
         plot_results(x_data, y_data)
+        
     else:
         print(f"Option '{function_call}' is not supported.")
 
