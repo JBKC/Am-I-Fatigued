@@ -441,7 +441,7 @@ class QuadraticDiscriminant(BaseModel):
         X_train_2d = pca.fit_transform(X_train)
         logging.info(f"PCA transformation completed in {time.time() - start_time} seconds")
     
-        h = 0.02  # step size in the mesh
+        h = 0.1  # step size in the mesh
         x_min, x_max = X_train_2d[:, 0].min() - 1, X_train_2d[:, 0].max() + 1
         y_min, y_max = X_train_2d[:, 1].min() - 1, X_train_2d[:, 1].max() + 1
         xx, yy = np.meshgrid(np.arange(x_min, x_max, h), np.arange(y_min, y_max, h))
