@@ -40,7 +40,7 @@ class Processing:
             class_weighting - split between classes (returned as a list with length = num of classes)
         '''
 
-        df = pd.read_csv('hrv_ppg.csv')
+        df = pd.read_csv('ppg_dataframe.csv')
 
         # x = features, y = classification labels (0 or 1)
         X = df.drop(['Filename', 'State'], axis=1)
