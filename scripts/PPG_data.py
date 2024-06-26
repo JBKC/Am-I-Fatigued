@@ -139,7 +139,7 @@ def run_new_full(folder):
             df = pd.concat([df, sub_df], ignore_index=True)
 
     # save locally to CSV
-    df.to_csv('hrv_ppg.csv', index=False)
+    df.to_csv('ppg_dataframe.csv', index=False)
     print(df)
     return df
 
@@ -151,7 +151,7 @@ def plot_results(x_data, y_data):
     '''
 
     # read saved CSV
-    df = pd.read_csv('hrv_ppg.csv')
+    df = pd.read_csv('ppg_dataframe.csv')
 
     # Define the unique states and a color palette
     unique_states = df['State'].unique()
