@@ -2,6 +2,7 @@
 
 The goal of this project is to differentiate between physically fatigued vs. non-fatigued states from only a photoplethysmography (PPG) signal. PPG data is collected from a wrist-worn device, normalised and filtered, then features are extracted and passed into a range of supervised ML classifier models which runs nested cross validation over train/test splits and optimal hyperparameter combinations.
 
+
 ## Contents
 
 1. [Project structure](#project-structure)
@@ -9,6 +10,7 @@ The goal of this project is to differentiate between physically fatigued vs. non
 3. [Usage](#usage)
 4. [Results](#results)
 5. [Sources of inspiration](#sources-of-inspiration)
+
 
 
 ## Project structure
@@ -21,6 +23,7 @@ Lots of clarifying notes + descriptions in the code. Summary:
   - `HRV_analysis.py` - extracts features specific to HRV (heart rate variability). Called automatically by PPG_data.py
   - `PPG_models.py` - takes CSV output from PPG_data.py and trains data on a supervised ML model specified by user, then tests the model on a previously unseen split
   - `general_peak_filtering.py` - general peak-finding algorithm tailored to PPG
+
 
 ## Installation
 ### 1. Clone this repository:
@@ -39,6 +42,7 @@ Lots of clarifying notes + descriptions in the code. Summary:
    ```
    pip install -r requirements.txt
    ```
+
 
 ## Usage
 ### 1. Run main script to extract and process data 
@@ -74,13 +78,23 @@ When prompted, choose which model to train the data on exactly as appears in the
 - `gaussian nb` = Gaussian Naive Bayes
 - `gaussian pc` = Gaussian Process Classification
   
-Output is the chosen hyperparameters, model performance table (accuracy, precision, recall, f1-score), confusion matrix values, ROC AUC (with plot).
+Output is the chosen hyperparameters, model performance table (accuracy, precision, recall, f1-score), confusion matrix values, ROC AUC (with ROC curve plot).
 
-`svm`, `knn`, `qda`, `gaussian nb` & `gaussian pc` models will also output a probability countour plot over the training data
+Also outpts a probability countour plot over the training data  for `svm`, `knn`, `qda`, `gaussian nb` & `gaussian pc` models (close the ROC curve plot to see).
+
 
 
 # Results
 
 TBU
 
+
 # Sources of inspiration
+Some papers used to flesh out this project:
+- [Measuring_Photoplethysmogram-Based_Stress-Induced_Vascular_Response_Index_to_Assess_Cognitive_Load_and_Stress]([https://pages.github.com/](https://www.researchgate.net/publication/300727633_Measuring_Photoplethysmogram-Based_Stress-Induced_Vascular_Response_Index_to_Assess_Cognitive_Load_and_Stress))
+- [Fatigue Estimation Using Peak Features from PPG Signals](https://www.mdpi.com/2227-7390/11/16/3580)
+- [An Overview of Heart Rate Variability Metrics and Norms](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5624990/)
+- [Heart rate variability: Standards of measurement, physiological interpretation, and clinical use](https://academic.oup.com/eurheartj/article/17/3/354/485572)
+- [Nonlinear Methods to Assess Changes in Heart Rate Variability in Type 2 Diabetic Patients](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4062368/)
+  
+
