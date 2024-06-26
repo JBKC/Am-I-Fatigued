@@ -91,7 +91,7 @@ TBU
 
 # Sources of inspiration
 Some papers used to flesh out this project:
-- [Measuring_Photoplethysmogram-Based_Stress-Induced_Vascular_Response_Index_to_Assess_Cognitive_Load_and_Stress]([https://pages.github.com/](https://www.researchgate.net/publication/300727633_Measuring_Photoplethysmogram-Based_Stress-Induced_Vascular_Response_Index_to_Assess_Cognitive_Load_and_Stress))
+- [Measuring_Photoplethysmogram-Based_Stress-Induced_Vascular_Response_Index_to_Assess_Cognitive_Load_and_Stress](https://www.researchgate.net/publication/300727633_Measuring_Photoplethysmogram-Based_Stress-Induced_Vascular_Response_Index_to_Assess_Cognitive_Load_and_Stress](https://www.researchgate.net/publication/300727633_Measuring_Photoplethysmogram-Based_Stress-Induced_Vascular_Response_Index_to_Assess_Cognitive_Load_and_Stress))
 - [Fatigue Estimation Using Peak Features from PPG Signals](https://www.mdpi.com/2227-7390/11/16/3580)
 - [An Overview of Heart Rate Variability Metrics and Norms](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5624990/)
 - [Heart rate variability: Standards of measurement, physiological interpretation, and clinical use](https://academic.oup.com/eurheartj/article/17/3/354/485572)
