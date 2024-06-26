@@ -1,5 +1,12 @@
 # PPG_fatigue
 
+1. [Project Description](#project-description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Contributing](#contributing)
+5. [License](#license)
+6. [Contact](#contact)
+
 Goal: Use Supervised ML models to determine between different classes of photoplethysmography (PPG) biosignals (fatigued vs non-fatigued)
 
 Fatigued = reading taken <2hrs after an intense training session (sprinting + heavy weights)
