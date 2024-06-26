@@ -108,9 +108,9 @@ def run_new_full(folder):
     for filename in os.listdir(folder):
         if filename == '.DS_Store':
             continue  # skip processing .DS_Store file
-        if 'standard' in filename:
+        if 'pre-training' in filename or 'standard' in filename or 'no training' in filename:
             state = 0  # 1 = fatigued, 0 = standard
-        elif 'fatigued' in filename:
+        elif 'post-training' in filename:
             state = 1
         else:
             continue
