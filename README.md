@@ -13,7 +13,7 @@ The goal of this project is to differentiate between physically fatigued vs. non
 
 
 ## Repo structure
-Lots of clarifying notes + descriptions in the code. Summary here:
+Lots of clarifying notes + descriptions in the code. Summary:
 
 - `data/` - folder containing raw .txt files of PPG signals
 - `scripts/` - folder containing python scripts
@@ -25,10 +25,27 @@ Lots of clarifying notes + descriptions in the code. Summary here:
 
 ## Installation
 1. Clone this repository:
-   ```git clone https://github.com/yourusername/PPG_fatigue.git
-      cd eeg-pipeline
+   ```
+   git clone https://github.com/yourusername/PPG_fatigue.git
+   cd PPG_fatigue
+   ```
 
+2. Create and activate virtual environment:
+   ```
+   python -m venv venv
+   source venv/bin/activate
+   ```
 
+3. Install the required packages:
+   ```
+   pip install -r requirements.txt
+   ```
+
+## Usage
+1. Collect data:
+   ```
+
+   ```
 
 
 ## Usage
