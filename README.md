@@ -80,7 +80,7 @@ When prompted, choose which model to train the data on exactly as appears in the
   
 Output is the chosen hyperparameters, model performance table (accuracy, precision, recall, f1-score), confusion matrix values, ROC AUC (with ROC curve plot).
 
-Also outpts a probability countour plot over the training data  for `svm`, `knn`, `qda`, `gaussian nb` & `gaussian pc` models (close the ROC curve plot to see).
+Also outputs a probability countour plot over the training data  for `svm`, `knn`, `qda`, `gaussian nb` & `gaussian pc` models (close the ROC curve plot to see).
 
 
 
