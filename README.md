@@ -28,7 +28,7 @@ Lots of clarifying notes + descriptions in the code. Summary:
 ## Installation
 ### 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/PPG_fatigue.git
+   git clone https://github.com/JBKC/PPG_fatigue.git
    cd PPG_fatigue
    ```
 
